@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.movie-container {
+    margin-bottom: 20px;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+}
+
+.showcase .seat {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #444451;
+    border-radius: 5px;
+}
+
+.showcase .seat.selected {
+    background-color: #6feaf6;
+}
+
+.showcase .seat.occupied {
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #6feaf6;
+}
+
+.seat.occupied {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.screen {
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
